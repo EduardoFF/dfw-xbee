@@ -1,0 +1,8 @@
+version: '2'
+services:
+  footbot_control:
+    image: efeo/ros:footbot_control
+    build:
+      context: .
+      dockerfile: Dockerfile
+    

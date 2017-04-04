@@ -1,0 +1,14 @@
+version: '2'
+services:
+  armhf-tcp_xbee_bridge:
+    image: efeo/dfw:armhf-tcp_xbee_bridge
+    build:
+      context: .
+      dockerfile: Dockerfile.armhf
+  tcp_xbee_bridge:
+    image: efeo/dfw:tcp_xbee_bridge
+    build:
+      context: .
+      dockerfile: Dockerfile.x86_64
+
+    
