@@ -22,7 +22,6 @@ RUN set -x \
 
 RUN set -x \
 && git clone https://github.com/EduardoFF/droneflyway_dev.git /home/root/droneflyway_dev \
-&& ( cd /home/root/droneflyway_dev  && git checkout cad9e54  ) \	
 && cd /home/root/droneflyway_dev/xbee_bridge && mkdir -p build \
 && cd build && cmake -DCMAKE_BUILD_TYPE=Release ../ &&  make &&  make install 
 
